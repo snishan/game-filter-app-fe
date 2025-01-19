@@ -1,0 +1,60 @@
+.header-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.header-container {
+    margin: 0 auto;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.logo {
+    display: flex;
+    align-items: start;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #e31837;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 0px;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    right: 6%;
+    top: 20px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+    
+    .logout-icon {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 16px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .logout-button {
+        font-size: 14px;
+    }
+}

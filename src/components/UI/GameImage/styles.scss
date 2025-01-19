@@ -1,0 +1,53 @@
+.image-hover-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  max-height: 210px;
+
+  &:hover {
+    background: black;
+    border-radius: 8px;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    max-height: 210px;
+  }
+
+  .overlay {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .image-name {
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    height: auto;
+  }
+
+  &:hover .overlay {
+    opacity: 1;
+  }
+
+  &:hover .image {
+    opacity: 0.6;
+  }
+}

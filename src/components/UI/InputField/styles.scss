@@ -1,0 +1,108 @@
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.input-label {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  color: #808080;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  background-color: white;
+  padding: 0 0.25rem;
+  z-index: 99;
+
+  &.active {
+    top: 10px;
+    font-size: 12px;
+    color: #808080;
+    transform: translateY(-40%);
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  width: 90%;
+  padding: 0.78rem 1.2rem;
+  height: 45px;
+  font-size: 16px;
+  font-family: 'Prompt', sans-serif !important;
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+  color: #2B2B2B;
+  font-weight: 400;
+
+  &:focus {
+    border-color: #F2F2F2;
+
+    &+.input-label {
+      color: #F2F2F2;
+    }
+  }
+
+  &:not(:placeholder-shown),
+  &:focus {
+    &+.input-label {
+      top: 0;
+      font-size: 0.75rem;
+      background-color: white;
+      padding: 0 0.25rem;
+    }
+  }
+}
+
+.password-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #666;
+
+  &:hover {
+    color: #333;
+  }
+
+  .icon {
+    display: block;
+  }
+}
+
+.has-error {
+  .input-field {
+    border-color: #f44336;
+  }
+
+  .input-label {
+    color: #f44336;
+  }
+}
+.error-message {
+  display: block;
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 0.25rem;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .input-field {
+    padding: 0.78rem 1rem;
+  }
+}

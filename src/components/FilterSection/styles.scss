@@ -1,0 +1,194 @@
+.filter-section {
+    border: 2px solid #F2F2F2;
+    position: sticky;
+    padding: 6% 6% 0 6%;
+    border-radius: 8px;
+
+    .search-section {
+        .search-input {
+            width: 95%;
+            height: 44px;
+            border: 2px solid #F2F2F2;
+            padding-left: 10px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19.2px;
+            height: 50px;
+            border-radius: 6px;
+
+            &:focus {
+                outline: none;
+                border: 2px solid #F2F2F2;
+            }
+        }
+
+        .search-icon {
+            position: relative;
+            bottom: 33px;
+            left: 90%;
+        }
+
+        .active {
+            border: 2px solid #F2F2F2;
+        }
+    }
+
+    .filter-group {
+        .filter-name {
+            color: #808080;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19.2px;
+        }
+
+        .value-name {
+            color: #2B2B2B;
+            display: inline-flex;
+            margin: 0px 20px 10px 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19.2px;
+            min-width: 30px;
+            height: 20px;
+            padding: 8px;
+            cursor: pointer;
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
+
+        .highlighted {
+            min-width: 30px;
+            height: 20px;
+            border-radius: 4px;
+            padding: 8px;
+            background-color: #FDBC11;
+        }
+
+        .filter-tags {
+            min-height: 70px;
+            width: 100%;
+        }
+
+        .slider {
+            background-color: #FDBC11;
+        }
+    }
+
+    .reset-section {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        .filter-name {
+            width: 100%;
+        }
+
+        .filter-reset-button {
+            float: right;
+        }
+    }
+
+}
+
+
+.slider-track-container {
+    position: relative;
+    padding: 18px;
+
+    .slider-track {
+        position: absolute;
+        height: 15px;
+        width: 90%;
+        background-color: #FDBC11 !important;
+        border-radius: 9999px;
+    }
+
+    .active-number-2 {
+        width: 0%;
+        background-color: #FDBC11 !important;
+        z-index: 1;
+    }
+
+    .active-number-3 {
+        width: 50%;
+        background-color: #FDBC11 !important;
+        z-index: 1;
+    }
+
+    .active-number-4 {
+        width: 90%;
+        background-color: #FDBC11 !important;
+        z-index: 1;
+    }
+
+    .slider-marks {
+        position: relative;
+        height: 15px;
+        background-color: #F2F2F2;
+
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #F2F2F2;
+            z-index: 2;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            border: none;
+            outline: none;
+
+            &:hover {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+
+            &.active {
+                transform: translate(-50%, -50%) scale(1.1);
+                background-color: #FDBC11;
+            }
+
+            &:nth-child(1) {
+                left: 0%;
+            }
+
+            &:nth-child(2) {
+                left: 50%;
+            }
+
+            &:nth-child(3) {
+                left: 100%;
+            }
+        }
+
+        .initial-active {
+            background-color: #FDBC11;
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .search-section,
+    .columns-section {
+        display: none;
+    }
+
+    .filter-content {
+        text-align: start;
+    }
+
+    .filter-section {
+        border: none;
+    }
+}

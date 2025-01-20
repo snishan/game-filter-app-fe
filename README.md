@@ -51,7 +51,7 @@ yarn install
 
 2. Checkout to the  `development` brach or change the `.env` file in the root directory:
 ```env
-VITE_API_URL=http://localhost:3001
+VITE_BE_URL=http://localhost:3001
 ```
 
 3. Start the development server:

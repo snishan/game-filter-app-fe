@@ -45,7 +45,7 @@ A modern, interactive game filtering application built with **React**, **Vite**,
 1. Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/snishan/game-filter-app-fe.git
-cd game-filter-app
+cd game-filter-app-fe
 npm install
 ```
 

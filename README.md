@@ -46,7 +46,7 @@ A modern, interactive game filtering application built with **React**, **Vite**,
 ```bash
 git clone https://github.com/snishan/game-filter-app-fe.git
 cd game-filter-app-fe
-npm install
+yarn install
 ```
 
 2. Checkout to the  `development` brach or change the `.env` file in the root directory:
@@ -56,14 +56,14 @@ VITE_API_URL=http://localhost:3001
 
 3. Start the development server:
 ```bash
-npm run dev
+yarn  dev
 ```
 
 4. Open your browser and navigate to `http://localhost:5173` to view the app.
 
 5. To run tests:
 ```bash
-npm test
+yarn test
 ```
 
 ## 💻 Key Features
@@ -99,11 +99,11 @@ npm test
 * Add dark mode support
 
 ## 📚 Scripts
-* `npm run dev` - Start development server
-* `npm run build` - Build for production
-* `npm run preview` - Preview production build
-* `npm run lint` - Run ESLint
-* `npm test` - Run tests
+* `yarn run dev` - Start development server
+* `yarn run build` - Build for production
+* `yarn run preview` - Preview production build
+* `yarn run lint` - Run ESLint
+* `yarn test` - Run tests
 
 ## 🤝 Contributing
 1. Fork the repository
